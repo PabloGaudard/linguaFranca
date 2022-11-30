@@ -11,7 +11,7 @@
 				"args": [
 					"--login",
 					"-c",
-					"cd C:\\Users\\pablo\\Documents\\Projects\\linguaFranca\\frontend; npm start"
+					"cd frontend; npm start"
 				],
 				"color": "terminal.ansiBlue",
 				"title": "FrontEnd",
@@ -23,7 +23,7 @@
 				"args": [
 					"--login",
 					"-c",
-					"cd C:\\Users\\pablo\\Documents\\Projects\\linguaFranca\\backend; npm start"
+					"cd backend; npm start"
 				],
 				"color": "terminal.ansiYellow",
 				"title": "BackEnd",
