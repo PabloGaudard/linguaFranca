@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": "..",
+		}
+	],
+	"settings": {
+		"terminal.integrated.profiles.windows": {
+			"1 - FrontEnd": {
+				"path": "C:\\Program Files\\Git\\bin\\bash.exe",
+				"args": [
+					"--login",
+					"-c",
+					"cd C:\\Users\\pablo\\Documents\\Projects\\linguaFranca\\backend; npm start"
+				],
+				"color": "terminal.ansiBlue",
+				"title": "BackEnd",
+				"overrideName": true,
+				"icon": "symbol-color",
+			},
+			"2 - BackEnd": {
+				"path": "C:\\Program Files\\Git\\bin\\bash.exe",
+				"args": [
+					"--login",
+					"-c",
+					"cd C:\\Users\\pablo\\Documents\\Projects\\linguaFranca\\frontend; npm start"
+				],
+				"color": "terminal.ansiYellow",
+				"title": "BackEnd",
+				"overrideName": true,
+				"icon": "beaker",
+			},
+		}
+	}
+}
