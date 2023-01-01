@@ -1,9 +1,9 @@
 <template>
     <div class="flashcard-creation">
 
-
-        <Flashcard></Flashcard>
-
+        <div class="flashcards">
+            <Flashcard v-for="(card, i) in flashcards" v-bind:data="card" v-bind:key="i"></Flashcard>
+        </div>
 
 
         <h1>Create Flashcards</h1>
@@ -40,7 +40,35 @@ export default {
         return {
             target: '',
             translation: '',
-            flashcards: [],
+            flashcards: [
+                {            
+                    expression: 'дом',
+                    meaning: 'House',
+                    example: 'это мой дом',
+                    lang: 'ru',
+                    flipped: false,
+                    icon: 'https://cdn-icons-png.flaticon.com/512/609/609803.png',
+                    bgColor: 'dodgerblue'
+                },
+                {            
+                    expression: 'бабушка',
+                    meaning: 'Grandmother',
+                    example: 'привет бабушка',
+                    lang: 'ru',
+                    flipped: false,
+                    icon: 'https://cdn-icons-png.flaticon.com/512/9047/9047571.png',
+                    bgColor: '#4caf50'
+                },
+                {            
+                    expression: 'кошка',
+                    meaning: 'Cat',
+                    example: 'это мой кот',
+                    lang: 'ru',
+                    flipped: false,
+                    icon: 'https://cdn-icons-png.flaticon.com/512/1067/1067911.png',
+                    bgColor: 'tomato'
+                }
+            ],
         }
     },
     methods: {
@@ -58,7 +86,14 @@ export default {
 }
 </script>
   
-<style lang="scss">
+<style lang="scss" scoped>
+.flashcards{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 1%;
+}
+
 .flashcard-creation {
     text-align: center;
     margin: 50px;

@@ -7,8 +7,12 @@
 </template>
 
 <style>
-/* #app {
+*{
+  box-sizing: border-box;
+  margin: 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+/* #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
